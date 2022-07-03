@@ -1,0 +1,12 @@
+{%extends "template.html"%}
+{%block conteudo %}
+
+<p style="font-size:20px; text-align:center"><strong>Pagina inicial:</strong></p>
+
+<a class="btn btn-primary" href="{{ url_for('cadastro_usuario') }}">Cadastrar novo funcionário.</a>
+<a class="btn btn-primary" href="{{ url_for('pedido') }}">Processar receita.</a>
+<a class="btn btn-primary" href="{{ url_for('estoque') }}">Verificar e alterar estoque.</a>
+<a class="btn btn-primary" href="{{ url_for('logout') }}">Deslogar.</a>
+
+
+{%endblock%}
